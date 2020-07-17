@@ -33,6 +33,7 @@ const Header = ({ siteTitle, children }) => (
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
+  children: PropTypes.node
 }
 
 Header.defaultProps = {
