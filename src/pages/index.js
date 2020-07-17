@@ -44,8 +44,8 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Jasper Wang" />
       <Experience data={siteMetadata.experience}></Experience>
-      <Education data={siteMetadata.education}></Education>
       <Portfolio data={siteMetadata.portfolio} />
+      <Education data={siteMetadata.education}></Education>
     </Layout>
   )
 }

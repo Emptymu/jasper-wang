@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
 
     main {
       > div {
-        margin-bottom: 4rem;
+        margin-bottom: 2rem;
       }
   
       > div:nth-last-of-type {

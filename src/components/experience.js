@@ -7,10 +7,6 @@ import ItemSubTitle from './itemSubTitle';
 import {colorThird} from './styles/config';
 
 const styles = css`
-    > div {
-        margin-bottom: 3rem;
-    }
-
     > ul > li {
         max-width: 80%;
     }
@@ -21,7 +17,6 @@ const styles = css`
     }
 
     h4 + ul {
-        max-width: 80%;
         display: flex;
         flex-wrap: wrap;
         font-size: 90%;
@@ -37,8 +32,7 @@ const styles = css`
             margin-left: 1rem;
         }
 
-        > ul > li,
-        h4 + ul {
+        > ul > li {
             max-width: 100%;
         }
 
@@ -51,12 +45,13 @@ const styles = css`
 const Experience = ({data}) => {
     const expItems = data.map(({
         company,
+        position,
         accomplishments,
         time,
         techStack
     }, i) => (
         <div key={`exp-${i}`}>
-            <ItemSubTitle title={company} meta={time} metaPosition='left'/>
+            <ItemSubTitle title={company} meta={`${position} | ${time}`} metaPosition='left'/>
             <ul>
                 {accomplishments.map((acc, i) => <li key={`acc-${i}`}>{acc}</li>)}
             </ul>

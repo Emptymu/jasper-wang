@@ -620,4 +620,18 @@ export const globalStyles = css`
             font-size: 87.5%;
         }
     }
+
+    @media only print {
+        html {
+            font-size: 80%;
+        }
+
+        li {
+            margin-bottom: 0.75rem;
+        }
+
+        footer {
+            display: none;
+        }
+    }
 `;

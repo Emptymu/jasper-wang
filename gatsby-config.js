@@ -143,22 +143,22 @@ module.exports = {
         position: "Software Engineer, Frontend",
         time: "Oct 2018 - Present",
         accomplishments: [
-          "Lead projects by reviewing code, making architectural decisions, driving code refactors, and collaborating with UI, UX, and product.",
+          "Lead projects by collaborating with UI, UX, and product, reviewing code, making architectural decisions, and driving code refactor.",
           "Build reusable UI components, scalable layouts, and programmatic ads displaying modules in a Vue + Python Flask App.",
           "Develop and maintain Vanilla JS packages that support data logging, content embedding, and programmatic ads loading.",
           "Develop a React Mapping components library that provides dynamic mapping, routing, and searching.",
-          "Bootstrap and maintain frontend projects/packages including typing, testing, syntax transpiling, assets loading, building and deployment.",
-          "Leverage tools like Google lighthouse, WebPageSpeedTest, Webpack bundle analyzer to monitor performance metrics. And build adaptive user experience focusing on accessibility, SEO, and performance."
+          "Bootstrap and maintain frontend packages including typing, testing, building, and deployment.",
+          "Leverage tools like Google lighthouse and Webpack bundle analyzer to monitor performance metrics and build adaptive user experience focusing on accessibility, SEO, and performance."
         ],
         techStack: [
-          "Vanilla JS",
-          "Vue/React",
+          "Vanilla JS/Vue/React",
+          "Vuex/Redux",
           "TypeScript/Flow",
           "Jest/Cypress",
           "Webpack/Babel/Lerna",
           "Post CSS/SASS",
           "Jinja/Python",
-          "AWS/Jenkins/Git"
+          "AWS/Snowflake/Jenkins"
         ]
       },
       {
@@ -168,22 +168,24 @@ module.exports = {
         time: "Aug 2017 - Oct 2018",
         accomplishments: [
           "Worked closely with clients, PMs, and designers to deliver features, manage expectations, and meet deadlines.",
-          "Built high-quality Shopify themes that are easy to customize, responsive, and performant.",
+          "Built high-quality Shopify themes that are easy to scale and customize.",
           "Fixed bugs and optimized performane for more than 20 Shopify sites.",
           "Wrote Ruby scripts with Shopify Scripts API to automate and scale discount campaigns.",
           "Built a Shopify App boilerplate that handles installation and authentication with Shopify.",
         ],
         techStack: [
-          "jQuery/React/Node",
+          "jQuery/React",
+          "Express/Shopify API",
+          "Webpack/Babel",
           "SASS",
           "Liquid/Ruby",
-          "Google Cloud/Shopify"
+          "Google Cloud/SQL"
         ]
       },
       {
         company: "Wali",
         intro: "",
-        position: "Part-time Frontend Developer",
+        position: "Frontend Developer",
         time: "Sep 2016 - Aug 2017",
         accomplishments: [
           "Wore multiple hats including UI, UX, and Dev to design and build landing pages.",
@@ -191,7 +193,8 @@ module.exports = {
           "Built a chat-bot with React and Microsoft Bot Framework."
         ],
         techStack: [
-          "jQuery/React/Node",
+          "jQuery/React/Angularjs",
+          "Express/Socket.io",
           "LESS/Bootstrap",
           "Azure"
         ]
@@ -202,8 +205,8 @@ module.exports = {
         position: "Frontend Developer Intern",
         time: "Jun 2014 - Aug 2014",
         accomplishments: [
-          "Designed and Developed landing pages and UI components",
-          "Visualized data with charting libraries and created CSS/JS animations"
+          "Designed and Developed landing pages and UI components.",
+          "Visualized data with charting libraries and created CSS/JS animations."
         ],
         techStack: [
           "Vanilla JS/Highcharts",
