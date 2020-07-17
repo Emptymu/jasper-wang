@@ -5,7 +5,7 @@ module.exports = {
     email: `jasper920011@gmail.com`,
     social: ``,
     address: `15408 Ruthelent Street, Gardena CA 90249`,
-    description: ``,
+    description: `A front-end developer based in Los Angeles, CA. I'm passionate about learning new technologies and building performant websites and applications.`,
     education: [
       {
         title: "University of Washington",
@@ -242,4 +242,5 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
+  pathPrefix: "/jasper-wang",
 }
