@@ -1,32 +1,32 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
+import { css } from "@emotion/core";
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+import {colorSecondary} from './styles/config';
+
+const styles = css`
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1rem 1.0875rem;
+  }
+
+  h1 {
+    color: ${colorSecondary};
+    text-decoration: none;
+    margin: 0;
+  }
+`;
+
+const Header = ({ siteTitle, children }) => (
+  <header css={styles}>
+    <div>
+      <h1><Link to="/" > {siteTitle} </Link></h1>
+      {children}
     </div>
   </header>
 )
