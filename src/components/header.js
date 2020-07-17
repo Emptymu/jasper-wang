@@ -13,6 +13,14 @@ const styles = css`
     margin: 0 auto;
     max-width: 960px;
     padding: 1rem 1.0875rem;
+
+    @media screen and (max-width: 768px) {
+      flex-wrap: wrap;
+
+      h1 {
+        margin-bottom: 1rem;
+      }
+    }
   }
 
   h1 {

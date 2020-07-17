@@ -94,7 +94,7 @@ const Layout = ({ children }) => {
         <main> {children} </main>
       </div>
       <footer css={footerStyles}>
-          <p>Thanks for visiting! Feel free to reach out to me.</p>
+          <p>Thanks for visiting and feel free to reach out.</p>
           <p>
             <span>{siteMetadata.email}</span>
             <span>|</span>
