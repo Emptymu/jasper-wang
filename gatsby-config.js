@@ -169,7 +169,7 @@ module.exports = {
         accomplishments: [
           "Worked closely with clients, PMs, and designers to deliver features, manage expectations, and meet deadlines.",
           "Built high-quality Shopify themes that are easy to scale and customize.",
-          "Fixed bugs and optimized performane for more than 20 Shopify sites.",
+          "Fixed bugs and optimized performance for more than 20 Shopify sites.",
           "Wrote Ruby scripts with Shopify Scripts API to automate and scale discount campaigns.",
           "Built a Shopify App boilerplate that handles installation and authentication with Shopify.",
         ],
