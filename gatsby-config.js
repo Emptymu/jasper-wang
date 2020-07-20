@@ -143,11 +143,11 @@ module.exports = {
         position: "Software Engineer, Frontend",
         time: "Oct 2018 - Present",
         accomplishments: [
-          "Lead projects by collaborating with UI, UX, and product, reviewing code, making architectural decisions, and driving code refactor.",
+          "Help lead projects by collaborating with UI, UX, and product, reviewing code, making architectural decisions, and driving code refactor.",
           "Build reusable UI components, scalable layouts, and programmatic ads displaying modules in a Vue + Python Flask App.",
           "Develop and maintain Vanilla JS packages that support data logging, content embedding, and programmatic ads loading.",
           "Develop a React Mapping components library that provides dynamic mapping, routing, and searching.",
-          "Bootstrap and maintain frontend packages including typing, testing, building, and deployment.",
+          "Bootstrap and maintain frontend packages including typing, testing, building, and deployment, etc.",
           "Leverage tools like Google lighthouse and Webpack bundle analyzer to monitor performance metrics and build adaptive user experience focusing on accessibility, SEO, and performance."
         ],
         techStack: [
@@ -167,19 +167,20 @@ module.exports = {
         position: "Frontend Developer",
         time: "Aug 2017 - Oct 2018",
         accomplishments: [
-          "Worked closely with clients, PMs, and designers to deliver features, manage expectations, and meet deadlines.",
-          "Built high-quality Shopify themes that are easy to scale and customize.",
-          "Fixed bugs and optimized performance for more than 20 Shopify sites.",
-          "Wrote Ruby scripts with Shopify Scripts API to automate and scale discount campaigns.",
-          "Built a Shopify App boilerplate that handles installation and authentication with Shopify.",
+          "Built full-featured Shopify templates from scratch that are easy to scale and customize.",
+          "Built Ajax modules like Shopping Cart that ease the interactions with Shopify's API.",
+          "Summarized and wrote Ruby Classes that automate and scale sale campaigns in shopping cart and checkout.",
+          "Created a Shopify App boilerplate that handles App installation and authentication with Shopify.",
+          "Optimized performance on legacy codebases focusing on critical rendering path, code splitting, and lazy loading ",
         ],
         techStack: [
-          "jQuery/React",
-          "Express/Shopify API",
+          "jQuery/Express",
+          "React/Redux",
           "Webpack/Babel",
           "SASS",
+          "SQL",
           "Liquid/Ruby",
-          "Google Cloud/SQL"
+          "Google Cloud/Shopify API"
         ]
       },
       {
@@ -188,9 +189,9 @@ module.exports = {
         position: "Frontend Developer",
         time: "Sep 2016 - Aug 2017",
         accomplishments: [
-          "Wore multiple hats including UI, UX, and Dev to design and build landing pages.",
-          "Componentized frontend codebase to improve reusability and scalability.",
-          "Built a chat-bot with React and Microsoft Bot Framework."
+          "Wore multiple hats including UI, UX, and Engineering to design and build landing pages.",
+          "Componentized frontend codebase focusing on semantic HTML, accessibility, and modular CSS.",
+          "Built a chat-bot with React, Express, and Microsoft Bot Framework."
         ],
         techStack: [
           "jQuery/React/Angularjs",
@@ -205,8 +206,8 @@ module.exports = {
         position: "Frontend Developer Intern",
         time: "Jun 2014 - Aug 2014",
         accomplishments: [
-          "Designed and Developed landing pages and UI components.",
-          "Visualized data with charting libraries and created CSS/JS animations."
+          "Improved landing page experience focusing on CSS/JS animation.",
+          "Build dashboards with charting libraries and Vanilla JS."
         ],
         techStack: [
           "Vanilla JS/Highcharts",
