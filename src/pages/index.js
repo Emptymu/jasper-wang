@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Education from "../components/education";
 import Experience from "../components/experience";
+import Skills from "../components/skills";
 import Portfolio from "../components/portfolio";
 
 const IndexPage = () => {
@@ -16,15 +17,18 @@ const IndexPage = () => {
             title
             time
             major
-            areas
           }
           experience {
-            accomplishments
             company
-            intro
-            position
-            techStack
-            time
+            positions {
+              title
+              time
+              accomplishments
+            }
+          }
+          skills {
+            type
+            items
           }
           portfolio {
             link
@@ -44,8 +48,9 @@ const IndexPage = () => {
     <Layout>
       <SEO title="Jasper Wang" />
       <Experience data={siteMetadata.experience}></Experience>
-      <Portfolio data={siteMetadata.portfolio} />
       <Education data={siteMetadata.education}></Education>
+      <Skills data={siteMetadata.skills} />
+      <Portfolio data={siteMetadata.portfolio} />
     </Layout>
   )
 }

@@ -17,6 +17,7 @@ const Intro = ({ data }) => {
     const {
         phone,
         email,
+        social,
     } = data;
     
     return (
@@ -25,6 +26,8 @@ const Intro = ({ data }) => {
                 <p><a href={`mailto:${email}`}>{email}</a></p>
                 <p>|</p>
                 <p>{phone}</p>
+                {social && <p>|</p>}
+                {social && <p><a href={social} target="_blank" rel="noopener noreferrer">LinkedIn</a></p>}
             </address>
         </div>
     )

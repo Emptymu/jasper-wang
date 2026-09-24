@@ -8,6 +8,7 @@ export const colorPrimaryDark = `#0442bf`;
 export const colorPrimaryDarker = `#021859`;
 export const colorSecondary = `#f27e63`; // orange
 export const colorThird = `#d95284`; // pink
+export const colorFooter = `#2b2522`; // warm charcoal, sits under the orange/pink accents
 export const colorText = `hsla(0, 0%, 0%, 0.8)`;
 
 export const fontUrlHeading = `https://fonts.googleapis.com/css?family=Lato:400,700&display=swap`;

@@ -37,7 +37,7 @@ const Portfolio = ({data}) => {
 
     return (
         <div css={styles}>
-            <ItemTitle>Portfolio</ItemTitle>
+            <ItemTitle>Links</ItemTitle>
             <ul>
                 {portfolioItems}
             </ul>

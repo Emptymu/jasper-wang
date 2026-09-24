@@ -2,67 +2,85 @@ import React from "react";
 import { css } from "@emotion/core";
 
 import ItemTitle from './itemTitle';
-import ItemSubTitle from './itemSubTitle';
-
-import {colorThird} from './styles/config';
 
 const styles = css`
-    > ul > li {
-        max-width: 80%;
+    > div {
+        margin-bottom: 2rem;
     }
 
-    h4 {
-        color: ${colorThird};
-        font-size: 90%;
+    > div:last-of-type {
+        margin-bottom: 0;
     }
 
-    h4 + ul {
+    h3 {
         display: flex;
-        flex-wrap: wrap;
-        font-size: 90%;
+        align-items: baseline;
+        max-width: 100%;
+        margin-bottom: 1rem;
 
-        li {
-            width: calc(100%/4);
-            list-style: none;
+        span {
+            display: inline-block;
         }
+
+        span:nth-of-type(2) {
+            margin-left: 0.5rem;
+            font-weight: normal;
+        }
+
+        span:last-of-type {
+            margin-left: auto;
+            padding-left: 1rem;
+            font-size: 80%;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+    }
+
+    ul {
+        max-width: 80%;
+        margin-bottom: 0;
     }
 
     @media screen and (max-width: 768px) {
-        ul {
-            margin-left: 1rem;
-        }
-
-        > ul > li {
+        h3 {
+            flex-wrap: wrap;
             max-width: 100%;
+
+            span:nth-of-type(2) {
+                width: 100%;
+                margin-left: 0;
+            }
+
+            span:last-of-type {
+                width: 100%;
+                margin-top: 0.5rem;
+                margin-left: 0;
+                padding-left: 0;
+            }
         }
 
-        h4 + ul li {
-            width: calc(100%/2);
+        ul {
+            max-width: 100%;
+            margin-left: 1rem;
         }
     }
 `;
 
-const Experience = ({data}) => {
-    const expItems = data.map(({
-        company,
-        position,
-        accomplishments,
-        time,
-        techStack
-    }, i) => (
-        <div key={`exp-${i}`}>
-            <ItemSubTitle title={company} meta={`${position} | ${time}`} metaPosition='left'/>
-            <ul>
-                {accomplishments.map((acc, i) => <li key={`acc-${i}`}>{acc}</li>)}
-            </ul>
-            <div>
-                <h4>Tech Stack</h4>
+const Experience = ({ data }) => {
+    const expItems = data.flatMap(({ company, positions }, i) =>
+        positions.map(({ title, time, accomplishments }, j) => (
+            <div key={`exp-${i}-${j}`}>
+                <h3>
+                    <span>{company}</span>
+                    <span>{title}</span>
+                    <span><i>{time}</i></span>
+                </h3>
                 <ul>
-                    {techStack.map((stack, i) => <li key={`stack-${i}`}>{stack}</li>)}
+                    {accomplishments.map((acc, k) => <li key={`acc-${k}`}>{acc}</li>)}
                 </ul>
             </div>
-        </div>
-    ))
+        ))
+    );
 
     return (
         <div css={styles}>

@@ -11,7 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import { css, Global } from "@emotion/core";
 
 import { globalStyles } from "./styles/global";
-import { colorPrimaryDarker } from "./styles/config";
+import { colorFooter, colorSecondary } from "./styles/config";
 import Header from "./header"
 import Intro from "../components/intro"
 
@@ -21,6 +21,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          fullName
           address
           phone
           email
@@ -55,10 +56,14 @@ const Layout = ({ children }) => {
   `
 
   const footerStyles = css`
-    background-color: ${colorPrimaryDarker};
-    color: #fff;
+    background-color: ${colorFooter};
+    color: rgba(255, 255, 255, 0.85);
     text-align: center;
     padding: 3rem 2rem;
+
+    p:first-of-type {
+      color: ${colorSecondary};
+    }
 
     p {
       margin-bottom: 1rem;
@@ -87,7 +92,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Global styles={globalStyles} />
-      <Header siteTitle={siteMetadata.title}>
+      <Header siteTitle={siteMetadata.fullName}>
         <Intro data={siteMetadata} />
       </Header>
       <div css={contentStyles}>
