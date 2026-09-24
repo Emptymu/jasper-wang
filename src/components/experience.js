@@ -5,6 +5,7 @@ import ItemTitle from './itemTitle';
 
 const styles = css`
     > div {
+        max-width: 80%;
         margin-bottom: 2rem;
     }
 
@@ -15,17 +16,7 @@ const styles = css`
     h3 {
         display: flex;
         align-items: baseline;
-        max-width: 100%;
-        margin-bottom: 1rem;
-
-        span {
-            display: inline-block;
-        }
-
-        span:nth-of-type(2) {
-            margin-left: 0.5rem;
-            font-weight: normal;
-        }
+        margin-bottom: 0.25rem;
 
         span:last-of-type {
             margin-left: auto;
@@ -36,31 +27,32 @@ const styles = css`
         }
     }
 
+    p {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+
     ul {
-        max-width: 80%;
         margin-bottom: 0;
     }
 
     @media screen and (max-width: 768px) {
+        > div {
+            max-width: 100%;
+        }
+
         h3 {
             flex-wrap: wrap;
-            max-width: 100%;
-
-            span:nth-of-type(2) {
-                width: 100%;
-                margin-left: 0;
-            }
 
             span:last-of-type {
                 width: 100%;
-                margin-top: 0.5rem;
+                margin-top: 0.25rem;
                 margin-left: 0;
                 padding-left: 0;
             }
         }
 
         ul {
-            max-width: 100%;
             margin-left: 1rem;
         }
     }
@@ -72,9 +64,9 @@ const Experience = ({ data }) => {
             <div key={`exp-${i}-${j}`}>
                 <h3>
                     <span>{company}</span>
-                    <span>{title}</span>
                     <span><i>{time}</i></span>
                 </h3>
+                <p>{title}</p>
                 <ul>
                     {accomplishments.map((acc, k) => <li key={`acc-${k}`}>{acc}</li>)}
                 </ul>
