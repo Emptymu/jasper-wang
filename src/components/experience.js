@@ -6,7 +6,7 @@ import { colorGray, fontFamilyHeading } from './styles/config';
 
 const styles = css`
     > div {
-        max-width: 80%;
+        max-width: 100%;
         margin-bottom: 2rem;
     }
 

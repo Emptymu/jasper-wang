@@ -8,7 +8,7 @@ import {colorSecondary} from './styles/config';
 const styles = css`
   > div {
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 800px;
     padding: 1rem 1.45rem;
   }
 
@@ -16,7 +16,7 @@ const styles = css`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 80%;
+    max-width: 100%;
 
     @media screen and (max-width: 768px) {
       flex-wrap: wrap;

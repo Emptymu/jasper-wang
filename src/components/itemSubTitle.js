@@ -7,7 +7,7 @@ const ItemSubTitle = ({title, meta, metaPosition = 'right'}) => {
     const styles = css`
         display: flex;
         align-items: center;
-        max-width: 80%;
+        max-width: 100%;
 
         span {
             display: inline-block;

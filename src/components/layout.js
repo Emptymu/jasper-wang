@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
 
   const contentStyles = css`
     margin: 0 auto;
-    max-width: 960px;
+    max-width: 800px;
     padding: 1.0875rem 1.45rem;
 
     main {

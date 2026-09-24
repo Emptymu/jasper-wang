@@ -6,7 +6,7 @@ const ItemTitle = ({children}) => {
     return (
         <h2 css={css`
             display: flex;
-            max-width: 80%;
+            max-width: 100%;
             position: relative;
             color: ${colorSecondary};
             margin-bottom: 2rem;
