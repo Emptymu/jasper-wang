@@ -2,7 +2,7 @@ import React from "react";
 import { css } from "@emotion/core";
 
 import ItemTitle from './itemTitle';
-import { colorThird, fontFamilyHeading } from './styles/config';
+import { colorGray, fontFamilyHeading } from './styles/config';
 
 const styles = css`
     > div {
@@ -24,12 +24,12 @@ const styles = css`
         margin-bottom: 0.75rem;
         font-family: ${fontFamilyHeading};
         font-size: 1.1rem;
-        color: ${colorThird};
 
         span:last-of-type {
             margin-left: auto;
             padding-left: 1rem;
             font-size: 80%;
+            color: ${colorGray};
             white-space: nowrap;
         }
     }

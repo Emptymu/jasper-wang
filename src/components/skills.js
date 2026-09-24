@@ -3,7 +3,7 @@ import { css } from "@emotion/core";
 
 import ItemTitle from './itemTitle';
 
-import { colorThird } from './styles/config';
+import { colorGray } from './styles/config';
 
 const styles = css`
     > div {
@@ -12,7 +12,7 @@ const styles = css`
     }
 
     h4 {
-        color: ${colorThird};
+        color: ${colorGray};
         font-size: 90%;
         margin-bottom: 0.5rem;
     }

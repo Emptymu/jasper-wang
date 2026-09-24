@@ -1,7 +1,7 @@
 import React from "react";
 import { css } from "@emotion/core";
 
-import { colorThird } from "./styles/config";
+import { colorGray } from "./styles/config";
 
 const ItemSubTitle = ({title, meta, metaPosition = 'right'}) => {
     const styles = css`
@@ -16,7 +16,7 @@ const ItemSubTitle = ({title, meta, metaPosition = 'right'}) => {
         span:last-of-type {
             margin-left: ${metaPosition === 'right' ? 'auto' : '100px'};
             font-size: 80%;
-            color: ${colorThird};
+            color: ${colorGray};
         }
 
         @media screen and (max-width: 768px) {
