@@ -8,7 +8,6 @@ const ItemSubTitle = ({title, meta, metaPosition = 'right'}) => {
         display: flex;
         align-items: center;
         max-width: 80%;
-        color: ${colorThird};
 
         span {
             display: inline-block;
@@ -17,6 +16,7 @@ const ItemSubTitle = ({title, meta, metaPosition = 'right'}) => {
         span:last-of-type {
             margin-left: ${metaPosition === 'right' ? 'auto' : '100px'};
             font-size: 80%;
+            color: ${colorThird};
         }
 
         @media screen and (max-width: 768px) {

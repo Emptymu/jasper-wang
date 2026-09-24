@@ -13,7 +13,6 @@ import { css, Global } from "@emotion/core";
 import { globalStyles } from "./styles/global";
 import { colorFooter, colorSecondary } from "./styles/config";
 import Header from "./header"
-import Intro from "../components/intro"
 
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
@@ -92,9 +91,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <Global styles={globalStyles} />
-      <Header siteTitle={siteMetadata.fullName}>
-        <Intro data={siteMetadata} />
-      </Header>
+      <Header siteTitle={siteMetadata.fullName} />
       <div css={contentStyles}>
         <main> {children} </main>
       </div>

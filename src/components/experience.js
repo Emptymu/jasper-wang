@@ -15,7 +15,6 @@ const styles = css`
     }
 
     h3 {
-        color: ${colorThird};
         margin-bottom: 0.25rem;
     }
 
