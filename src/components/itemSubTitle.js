@@ -1,11 +1,14 @@
 import React from "react";
 import { css } from "@emotion/core";
 
+import { colorThird } from "./styles/config";
+
 const ItemSubTitle = ({title, meta, metaPosition = 'right'}) => {
     const styles = css`
         display: flex;
         align-items: center;
         max-width: 80%;
+        color: ${colorThird};
 
         span {
             display: inline-block;

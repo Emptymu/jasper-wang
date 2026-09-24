@@ -2,6 +2,7 @@ import React from "react";
 import { css } from "@emotion/core";
 
 import ItemTitle from './itemTitle';
+import { colorThird, fontFamilyHeading } from './styles/config';
 
 const styles = css`
     > div {
@@ -14,22 +15,24 @@ const styles = css`
     }
 
     h3 {
+        color: ${colorThird};
+        margin-bottom: 0.25rem;
+    }
+
+    .role {
         display: flex;
         align-items: baseline;
-        margin-bottom: 0.25rem;
+        margin-bottom: 0.75rem;
+        font-family: ${fontFamilyHeading};
+        font-size: 1.1rem;
+        color: ${colorThird};
 
         span:last-of-type {
             margin-left: auto;
             padding-left: 1rem;
             font-size: 80%;
-            font-weight: normal;
             white-space: nowrap;
         }
-    }
-
-    p {
-        font-size: 1.1rem;
-        margin-bottom: 0.75rem;
     }
 
     ul {
@@ -41,7 +44,7 @@ const styles = css`
             max-width: 100%;
         }
 
-        h3 {
+        .role {
             flex-wrap: wrap;
 
             span:last-of-type {
@@ -62,11 +65,11 @@ const Experience = ({ data }) => {
     const expItems = data.flatMap(({ company, positions }, i) =>
         positions.map(({ title, time, accomplishments }, j) => (
             <div key={`exp-${i}-${j}`}>
-                <h3>
-                    <span>{company}</span>
+                <h3>{company}</h3>
+                <div className="role">
+                    <span>{title}</span>
                     <span><i>{time}</i></span>
-                </h3>
-                <p>{title}</p>
+                </div>
                 <ul>
                     {accomplishments.map((acc, k) => <li key={`acc-${k}`}>{acc}</li>)}
                 </ul>
